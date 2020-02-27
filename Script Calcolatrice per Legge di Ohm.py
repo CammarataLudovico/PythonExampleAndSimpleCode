@@ -1,4 +1,4 @@
-# Questo script calcola i valori di: Tensione;Corrente;Resistenza;Potenza,con 3 cifre dopo la virgola (errore di ± 0.001).
+# Questo script calcola i valori di: Tensione;Corrente;Resistenza;Potenza, usati nella legge di Ohm con una tolleranza di 3 cifre dopo la virgola (errore di ± 0.001).
 
 print("1. Tensione" " (V)");
 print("2. Corrente" " (I)");
