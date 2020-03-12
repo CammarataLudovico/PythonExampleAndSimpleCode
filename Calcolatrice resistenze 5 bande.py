@@ -1,4 +1,4 @@
-# Calcolatrice per resistenze a 5 bande senza GUI v.0.0.2 (BETA)
+# Calcolatrice per resistenze a 5 bande senza GUI v.0.2.2 (BETA)
 print("Questo programma è stato creato per calcolare il valore delle resistenze. Tieni la resistenza nella tua mano e ora trascrivi in valore del colore partendo da destra e inseriscilo quando richiesto.")
 print("Attenzione, solo per resistenze a 5 bande!")
 # Primo colore
