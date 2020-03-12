@@ -17,16 +17,16 @@ if (scelta>=1 and scelta<=4):
     valore2 = float(input());
     if scelta == 1:
     	res = valore1*valore2;
-    	print("\n\rIl tuo risultato è = ", "%.3f" " Volt" %res);
+    	print("\n\r Il tuo risultato è = ", "%.3f" " Volt" %res);
     elif scelta == 2:
     	res = valore1/valore2;
-    	print("\n\rIl tuo risultato è = ", "%.3f" " Ampere" %res);
+    	print("\n\r Il tuo risultato è = ", "%.3f" " Ampere" %res);
     elif scelta == 3:
     	res = valore1/valore2;
-    	print("\n\rIl tuo risultato è = ", "%.3f" " Ohm" %res);
+    	print("\n\r Il tuo risultato è = ", "%.3f" " Ohm" %res);
     elif scelta == 4:
     	res = valore1*valore2;
-    	print("\n\rIl tuo risultato è = ", "%.3f" " Watt" %res);
+    	print("\n\r Il tuo risultato è = ", "%.3f" " Watt" %res);
 elif scelta == 5:
     exit();
 else:
