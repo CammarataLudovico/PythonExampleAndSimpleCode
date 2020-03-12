@@ -1,5 +1,5 @@
 # Autore: Ludovico Cammarata
-# Versione 1.0.1
+# Versione 1.0.2
 # Questo script calcola i valori di: Tensione; Corrente; Resistenza; Potenza, usati nella legge di Ohm con una tolleranza di 3 cifre dopo la virgola (errore di ± 0.001).
 # Ho utilizzato '\n\r' così da andare a capo e rendere così l'output un pò più carino e meno incasinato
 print(" ================================================================")
