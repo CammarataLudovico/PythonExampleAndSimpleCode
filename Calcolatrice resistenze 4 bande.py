@@ -20,7 +20,7 @@ elif prima_banda =="blu":
     prima_banda = "6"
 elif prima_banda =="viola":
     prima_banda = "7"
-elif prima_banda =="grgio":
+elif prima_banda =="grigio":
     prima_banda = "8"
 elif prima_banda =="bianco":
     prima_banda = "9"
