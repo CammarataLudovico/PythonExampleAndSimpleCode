@@ -1,8 +1,14 @@
-# Calcolatrice per resistenze a 4 bande senza GUI v.0.1.2 (BETA)
-print("Questo programma è stato creato per calcolare il valore delle resistenze. Tieni la resistenza nella tua mano e ora trascrivi in valore del colore partendo da destra e inseriscilo quando richiesto.")
-print("Attenzione, solo per resistenze a 4 bande!")
+# Autore: Ludovico Cammarata
+# Calcolatrice per resistenze a 4 bande senza GUI v.1.0.1 
+
+print("==============================================================================")
+print("Questo programma è stato creato per calcolare il valore delle resistenze. ")
+print("Tieni la resistenza nella tua mano e ora trascrivi in valore del colore partendo da destra e inseriscilo quando richiesto. \n\r")
+print("!!!  Attenzione, solo per resistenze a 4 bande !!!")
+print("==============================================================================")
 # Primo colore
-print ("Scegli il primo colore:")
+# Qui i valori: Nero = O; Marrone = 1; Rosso = 2; Arancio = 3; Giallo = 4; Verde = 5; Blu = 6; Viola = 7; Grigio = 8; Bianco = 9.
+print ("Scegli il primo colore (prima cifra significativa) :")
 prima_banda = input().lower()
 if prima_banda == "nero":
     prima_banda = "0"
@@ -28,7 +34,8 @@ else :
     prima_banda = "invalido"
     print ("Colore invalido.")
 # Secondo colore
-print ("Scegli il secondo colore:")
+# Qui i valori: Nero = O; Marrone = 1; Rosso = 2; Arancio = 3; Giallo = 4; Verde = 5; Blu = 6; Viola = 7; Grigio = 8; Bianco = 9.
+print ("Scegli il secondo colore (seconda cifra significativa) :")
 seconda_banda = input().lower()
 if seconda_banda == "nero":
     seconda_banda = "0"
@@ -54,10 +61,11 @@ else :
     seconda_banda = "invalido"
     print ("Colore invalido.")
 # Terzo colore
-print ("Scegli il terzo colore:")
+# Qui i valori: Nero = *1; Marrone = *10; Rosso = *100; Arancio = *1k; Giallo = *10k; Verde = *100k; Blu = *1M; Viola = *10M.
+print ("Scegli il terzo colore (moltiplicatore) :")
 terza_banda = input().lower()
 if terza_banda == "nero":
-    terza_banda = "0"
+    terza_banda = ""
 elif terza_banda =="marrone":
     terza_banda = "0"
 elif terza_banda =="rosso":
@@ -76,19 +84,30 @@ else :
     print ("Colore della banda inesistente.")
     terza_banda = "Colore inesistente"
 # Calcolo della tolleranza
-print("Ora scegli il colore della tolleranza. Se la tua resistenza è priva di questa banda inserire la parola", "(nessuno)" " premi il tasto invio")
+# Qui i valori: Nessuno = ±20%; Argento = ±10%; Oro = ±5%; Marrone = ±1%; Rosso = ±2%; Verde = ±0.5%; Blu = ±0.25%; Viola = ±0.1%.
+print("Ora scegli il colore della tolleranza. Se la tua resistenza è priva di tolleranza, premi invio.")
 tol = input().lower()
 if tol == "oro":
-    tolleranza = "con una tolleranza del ±5% "
+    tolleranza = "con una tolleranza del ± 5% "
 elif tol == "argento":
-    tolleranza = "con una tolleranza del ±10% "
-elif tol == "nessuno":
-    tolleranza = "con una tolleranza del ±20% "
+    tolleranza = "con una tolleranza del ± 10% "
+elif tol == "":
+    tolleranza = "con una tolleranza del ± 20% "
+elif tol == "marrone":
+    tolleranza = "con una tolleranza del ± 1% "
+elif tol == "rosso":
+    tolleranza = "con una tolleranza del ± 2% "
+elif tol == "verde":
+    tolleranza = "con una tolleranza del ± 0.5% "
+elif tol == "blu ":
+    tolleranza = "con una tolleranza del ± 0.25% "
+elif tol == "viola":
+    tolleranza = "con una tolleranza del ± 0.1% "
 else:
     tolleranza = ""
 
-
-def result(): # Calcolo della resistenza
+# Calcolo della resistenza
+def result(): 
     print ("La tua resistenza vale "+ resistenza  +" Ohms " + tolleranza + ".")
 
 
