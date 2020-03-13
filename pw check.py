@@ -1,8 +1,10 @@
+# Autore: Ludovico Cammarata
+# Versione: 1.0.1
 # Programma in Python per capire se la tua password è ad un buon livello di sicurezza
 # Per poter validare la vostra password dovete scriverla dopo l'uguale nella variabile password qui sotto 
 import re 
-password = "An_s
-$op9"
+print("")
+password = "An_s$op9"
 flag = 0
 while True:
         #Qui lo script vede se la password inserita è almeno di 8 caratteri, se così non fosse attribuisce alla password valore = -1 e quindi nel conteggio alla fine la password risulta non valida
@@ -34,4 +36,5 @@ while True:
 		break
 
 if flag ==-1: 
-	print("Password non valida") 
+	print("Password non valida")
+print("")
