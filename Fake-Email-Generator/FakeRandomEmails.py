@@ -1,9 +1,15 @@
+# Autore: Ludovico Cammarata
+# Versione: 1.0.1
+# Ho utilizzato '\n\r' così da andare a capo e rendere così l'output un pò più carino e meno incasinato
+
 import random
 import string
 import csv
 import progressbar
 
-
+print('''=====================================
+           Email Generator
+===================================== \n\r''')
 # Chiede all'utente quante email vuole generare, e se non viene inserito un valore intero, lo script riparte.
 def getcount():
 	numero_email = input("Scrivi quante email vuoi generare : ")
@@ -40,7 +46,7 @@ emailarray = []
 
 #Counter per quante email sta generando
 
-print ("Creazione indirizzi email...")
+print ("Creazione indirizzi email... \n\r")
 print ("Progresso: ")
 
 prebar = progressbar.ProgressBar(maxval=int(howmany))
@@ -51,7 +57,7 @@ for i in prebar(range(howmany)):
 		counter = counter+1
 		prebar.update(i)
 	
-print ("Creazione completa.")
+print ("Creazione completa. \n\r")
 
 #Nomina del file
 
