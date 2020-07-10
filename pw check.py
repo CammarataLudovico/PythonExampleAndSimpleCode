@@ -1,5 +1,5 @@
 # Autore: Ludovico Cammarata
-# Versione: 1.0.2
+# Versione: 1.0.3
 # Programma in Python per capire se la tua password è ad un buon livello di sicurezza
 # Per poter validare la vostra password dovete scriverla dopo l'uguale nella variabile password qui sotto 
 import re 
@@ -8,8 +8,8 @@ password = "Anassop9"
 # Con flag = 0 lo script assegna un valore iniziale di 0
 flag = 0
 while True:
-        #Qui lo script vede se la password inserita è almeno di 8 caratteri, se così non fosse attribuisce alla password valore = -1 e quindi nel conteggio alla fine la password risulta non valida
-	if (len(password)<8): 
+        #Qui lo script vede se la password inserita è almeno di 10 caratteri, se così non fosse attribuisce alla password valore = -1 e quindi nel conteggio alla fine la password risulta non valida
+	if (len(password)<10): 
 		flag = -1
 		break
 	#Qui lo script vede se è stato inserito una lettera da a-z minuscole, se così non fosse attribuisce alla password valore = -2 e quindi nel conteggio alla fine la password risulta non valida
@@ -38,7 +38,7 @@ while True:
 		break
 # Valore finale della variabile flag = -1
 if flag ==-1: 
-	print("Password non valida: non è lunga almeno 8 caratteri!")
+	print("Password non valida: non è lunga almeno 10 caratteri!")
 # Valore finale della variabile flag = -2
 elif flag == -2:       
         print("Password non valida: non contiene almeno un carattere minuscolo!")
